@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/liveData_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="LiveData"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLiveData"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="LiveData"
+        app:layout_constraintEnd_toEndOf="@+id/liveData_txt"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/liveData_txt"
+        app:layout_constraintTop_toBottomOf="@+id/liveData_txt" />
+
+    <TextView
+        android:id="@+id/stateFlow_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="StateFlow"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnLiveData"
+        app:layout_constraintStart_toStartOf="@+id/btnLiveData"
+        app:layout_constraintTop_toBottomOf="@+id/btnLiveData" />
+
+    <Button
+        android:id="@+id/btnStateFlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StateFlow"
+        app:layout_constraintEnd_toEndOf="@+id/stateFlow_txt"
+        app:layout_constraintStart_toStartOf="@+id/stateFlow_txt"
+        app:layout_constraintTop_toBottomOf="@+id/stateFlow_txt" />
+
+    <TextView
+        android:id="@+id/flow_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Flow"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnStateFlow"
+        app:layout_constraintStart_toStartOf="@+id/btnStateFlow"
+        app:layout_constraintTop_toBottomOf="@+id/btnStateFlow" />
+
+    <Button
+        android:id="@+id/btnFlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flow"
+        app:layout_constraintEnd_toEndOf="@+id/flow_txt"
+        app:layout_constraintStart_toStartOf="@+id/flow_txt"
+        app:layout_constraintTop_toBottomOf="@+id/flow_txt" />
+
+    <TextView
+        android:id="@+id/sharedFlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="ShardFlow"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnFlow"
+        app:layout_constraintStart_toStartOf="@+id/btnFlow"
+        app:layout_constraintTop_toBottomOf="@+id/btnFlow" />
+
+    <Button
+        android:id="@+id/btnShardFlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ShardFlow"
+        app:layout_constraintEnd_toEndOf="@+id/sharedFlow"
+        app:layout_constraintStart_toStartOf="@+id/sharedFlow"
+        app:layout_constraintTop_toBottomOf="@+id/sharedFlow" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
